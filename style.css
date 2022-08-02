@@ -7,10 +7,7 @@ body {
     display: flex;
     margin: 0;
     height: 100%;
-    flex-direction: column;}
-
-header, section, footer {
-    width: 100%;
+    flex-direction: column;
 }
 
 section {
@@ -32,18 +29,25 @@ header {
     background-color: #1f2937;
     padding-bottom: 100px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav, .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.hero {
+    flex-wrap: wrap;
 }
 
 header h1 {
    font-size: 24px;
    color: #f9faf8; 
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 100px;
 }
 
 a, #secondary-text {
@@ -67,15 +71,20 @@ ul {
     padding: 0;
 }
 
-.header2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 100px;
-} 
-
 .button-1 {
     border-color: #3882f6;
+}
+
+.image {
+    font-size: 18px;
+    color: #e5e7eb;
+    background-color: gray;
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Information part */
@@ -87,17 +96,6 @@ ul {
     padding: 50px;
 }
 
-.image {
-    font-size: 18px;
-    color: #e5e7eb;
-    background-color: gray;
-    width: 500px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .h2 {
     font-size: 36px;
     font-weight: 900;
@@ -107,25 +105,28 @@ ul {
 .container-1 {
     display: flex;
     margin: 25px;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
 }
 
 .container-1 .con {
-    max-width: 100px;
-    height: 100px;
+    max-width: 150px;
     margin: 30px;
 }
 
 .container-1 .con div {  
     border: 5px #3882f6 solid;
-    border-radius: 5px;
-    width: 80px;
-    height: 80px;
+    border-radius: 10px;
+    width: 145px;
+    height: 145px;
 }
 
 /* Quote Part */
 
 .section-2 {
     background-color: #e5e7eb;
+    padding: 50px;
 }
 
 .container-2 {
@@ -155,6 +156,7 @@ ul {
     align-items: center;
     justify-content: center;
     flex: 1 0 20%;
+    padding: 50px;
 }
 
 .container-3 {
@@ -164,9 +166,12 @@ ul {
     width: 80%;
     height: 60%;
     color: white;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .container-3 p {
@@ -175,6 +180,8 @@ ul {
 
 .container-3 button {
     border: 2px #f9faf8 solid;
+    font-size: 18px;
+    margin: 10px;
 }
 
 /* Footer */
